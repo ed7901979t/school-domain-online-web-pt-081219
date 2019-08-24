@@ -18,7 +18,12 @@ class School
   roaster = {} #hash keys grade levels and values for student names
   
   def school.add_student(names, grade)
-    
+    roaster = {}
+    roaster.each do {|names, grade| 
+      roaster << names
+      roaster << grade
+    end
+    return roaster
   
   
   
